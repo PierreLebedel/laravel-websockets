@@ -321,6 +321,6 @@ return [
     |
     */
 
-    'promise_resolver' => \React\Promise\FulfilledPromise::class,
+    'promise_resolver' => \React\Promise\Internal\FulfilledPromise::class,
 
 ];
