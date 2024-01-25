@@ -42,7 +42,7 @@ class Helpers
     public static function createFulfilledPromise($value): PromiseInterface
     {
         $resolver = config(
-            'websockets.promise_resolver', \React\Promise\FulfilledPromise::class
+            'websockets.promise_resolver', \React\Promise\Internal\FulfilledPromise::class
         );
 
         return new $resolver($value, static::$loop);
